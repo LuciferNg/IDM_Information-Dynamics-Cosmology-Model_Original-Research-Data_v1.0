@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv*/
+*.venv*
+
+# Large binary data files
+*.npz
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Jupyter (if any)
+.ipynb_checkpoints/
+
+# Environment
+.env

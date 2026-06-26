@@ -1,0 +1,21 @@
+# fσ₈ Growth Rate Data Compilation
+# Compiled for IDM validation (Version 3.0)
+# Sources: eBOSS DR16, 6dFGS, WiggleZ, VIPERS, SDSS DR7
+#
+# Columns: z_eff  fσ₈  σ_fσ8  Survey  Reference
+
+0.067  0.423  0.055  6dFGS          Beutler+2012
+0.100  0.369  0.065  SDSS DR7       Feix+2015
+0.130  0.429  0.077  SDSS DR7       Feix+2015
+0.380  0.497  0.053  eBOSS LRG      Alam+2021 (DR16)
+0.440  0.413  0.080  WiggleZ        Blake+2012
+0.510  0.459  0.039  eBOSS LRG      Alam+2021 (DR16)
+0.600  0.390  0.070  WiggleZ        Blake+2012
+0.600  0.490  0.100  VIPERS         Pezzotta+2017
+0.698  0.473  0.044  eBOSS LRG      Alam+2021 (DR16)
+0.730  0.437  0.072  WiggleZ        Blake+2012
+0.800  0.480  0.080  VIPERS         Pezzotta+2017
+0.850  0.458  0.058  eBOSS ELG      de Mattia+2021
+1.000  0.480  0.120  VIPERS         Pezzotta+2017
+1.050  0.425  0.082  eBOSS ELG      de Mattia+2021
+1.480  0.464  0.098  eBOSS QSO      Neveux+2020
