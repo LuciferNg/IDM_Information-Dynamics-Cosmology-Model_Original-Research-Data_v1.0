@@ -22,3 +22,9 @@ Thumbs.db
 
 # Environment
 .env
+
+# Data files (large) — keep on disk, never upload (2026-10-18, 調律者 decision)
+*.fits
+*.fits.gz
+*.parquet
+*.deb
