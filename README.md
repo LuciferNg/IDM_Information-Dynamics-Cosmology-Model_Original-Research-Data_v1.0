@@ -90,7 +90,7 @@ v1.0 因此只做三件事：
 ## 項目結構
 
 ```
-IDM-v1.0--Information-Dynamics-Cosmology/
+Information-Dynamics-Cosmology/         # 本 repo（v1.0 主體）
 ├── README.md                          # 本檔
 ├── core/                              # 模型核心（8 個 .py）
 │   ├── cosmic_idm.py                  # 原始 IDM 膨脹模型
@@ -140,31 +140,23 @@ IDM-v1.0--Information-Dynamics-Cosmology/
 │   ├── IDM_narrative_part2.md         # 敘事二：探索過程
 │   ├── IDM_narrative_part3.md         # 敘事三：結論
 │   └── alerts.md                      # 六項批次運算的工作單
-├── Entropy-Gradient-Validation/       # 內嵌子專案：C3／C4 的實測
-│   ├── class_standalone/              # 獨立編譯的 CLASS 樹
-│   ├── data/                          # eBOSS P(k)、Planck lensing、fσ₈
-│   ├── docs/                          # FINAL_REPORT／FINAL_SUMMARY／ROADMAP
-│   └── figs/                          # 殘差與增長 ODE 圖
-└── Lagrangian-Reverse-Engineering/    # 內嵌子專案：Horndeski 作用量逆推
-    ├── src/                           # hubble／reconstruction／screening 等模組
-    ├── notebooks/                     # v(φ) 管線
-    ├── class/                         # 另一份 CLASS 樹（含 IDM patch）
-    └── docs/                          # stage1–stage4 結果與技術報告
 ```
 
-> 兩個子專案各自帶 `.git`（embedded repo），唔屬本 repo 的 commit 歷史。
+> 重構（2026-11-03）：原本內嵌的兩個子專案已分拆為平級獨立 repo —
+> `../Entropy-Gradient-Validation/`（C3/C4 實測）與 `../Lagrangian-Reverse-Engineering/`（Horndeski 作用量逆推）。
+> 三者各自帶 `.git` 與獨立 remote；本 repo 只保留 v1.0 主體（48 個 tracked 檔）。
 
 ## 狀態快照
 
 ```
-頂層目錄：9（core／mcmc／validation／class_idm／data／docs／results 及 2 個子專案）
-文件總數：4202（兩子專案佔 4154）
-markdown：46 份；Python：2315 個（含子專案與 CLASS 樹）
+頂層目錄：7（core／mcmc／validation／class_idm／data／docs／results）
+文件總數：48（本 repo 主體）
+markdown：12 份；Python：24 個（core／mcmc／validation／class_idm patch）
 
 本體與動力層：三層框架完成，C3／C4 停在 labelling
 參數閉合  ：ε 已閉合；z_c 未閉合（仍由數據定）
 觀測層    ：六項檢驗完成；三碼 MCMC 一致；CLASS 已打通
-子專案    ：Entropy-Gradient-Validation 3 項測試完成；Lagrangian 4 階段完成
+子專案    ：已分拆為平級 repo（Entropy 4 測試完成；Lagrangian 4 階段完成）
 未完成    ：α 的第一原理推導、z_c 的理論來源、音界自洽重算、C3/C4 定量化
 ```
 
